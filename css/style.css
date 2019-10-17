@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+@font-face{
+  font-family: 'PixelMplus10-Regular','PixelMplus10-Bold';
+  src: url(../font/PixelMplus10-Regular.ttf);
+  src: url(../font/PixelMplus10-Bold.ttf);
+}
+body{
+  font-family: 'PixelMplus10-Regular';
+  font-size: 16px;
+  background: #000;
+}
+p{
+  padding: 5px 0;
+  line-height: 1.5;
+}
+.rel{ position: relative; }
+.wrapper{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.battleCommentField{
+  display: flex;
+  justify-content: space-between;
+}
+.gradinentWrapper{
+  margin: 0 auto;
+  border-radius: 8px;
+  background: #000;
+  padding: 2px;
+}
+.nessHpWrapper{
+  width: 200px;
+}
+.nessHpWrapper > .gradient_inner01{
+  height: auto;
+}
+.commentWrapper{
+  font-size: 24px;
+  width: 70%;
+}
+.commandWrapper{
+  width: 28%;
+}
+.gradient_inner01{
+  margin: 0 auto;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 0 5px 3px #888 inset;
+  padding: 15px;
+  height: 200px;
+}
+.gradient_inner02{
+  background: #fff;
+  border-radius: 8px 8px;
+  box-shadow: 0 0 5px 4px #a0a0a0;
+  height: 100%;
+}
+.nessHpBox{
+  border: 2px solid #000;
+  border-radius: 6px;
+  position: relative;
+  height: 100%;
+}
+.commentBox{
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  height: 100%;
+  overflow-y: scroll;
+}
+.bgpattern {
+	background-color: #9090e8;
+	background-size: 10px 10px;
+	background-position: 0 0, 5px 5px;
+	background-image:
+	 linear-gradient(45deg,  #9080a7 25%, #9080a7 25%, transparent 25%,
+	  transparent 75%, #9080a7 75%, #9080a7 75%),
+	 linear-gradient(-135deg, #9080a7 25%, #9080a7 25%, transparent 25%,
+	  transparent 75%, #9080a7 75%, #9080a7 75%);
+}
+.name{
+  font-size: 35px;
+  color: #fff;
+} 
+.drumCounter{
+  margin-top: 10px;
+}
+.drumCounter li{
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  line-height: 1.0;
+}
+.hp{
+  color: #fff;
+  font-size: 28px;
+  text-align: right;
+}
+.hpCounter{
+  color: #000;
+  background: #fff;
+  border: 1px solid #000;
+  border-bottom: 8px solid #000;
+  font-size: 55px;
+  padding-left: 10px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+.monsters{
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+}
+.start_input{
+  border: none;
+  background: none;
+  -webkit-appearance: none !important;
+  color: #fff;
+  font-size: 32px;
+}
+.command_input{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.read{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+.op_img{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+.op_window{
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  display: block;
+}
+.commandWrapper .commentBox{
+  overflow: hidden;
+}
