@@ -1,5 +1,5 @@
 <?php 
-require('class.php');
+include('class.php');
 
 if(!empty($_POST)){
   $attack = (!empty($_POST['attack'])) ? true : false;
